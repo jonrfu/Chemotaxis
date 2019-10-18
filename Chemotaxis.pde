@@ -1,4 +1,5 @@
 Bacteria[] b;
+ int j=0;
  void setup()   
  {   
  size(500,500);
@@ -9,7 +10,10 @@ Bacteria[] b;
  }
  }   
  void draw()   
- {    
+ {   
+   if(j==0){
+     background(0);}else{
+     };
 for (int i =0;i< b.length; i++){
   b[i].show();
   b[i].move();
@@ -31,3 +35,12 @@ for (int i =0;i< b.length; i++){
   y= y+((int)(Math.random()*7)-3);
   }
  }  
+ void mousePressed(){
+ 
+   if(j==0){
+     j++;
+   }else{
+     j--;
+   }
+ 
+ }
