@@ -14,13 +14,16 @@ int x,y,bcolor;
  }  
  class Bacteria    
  {       
-  Bacteria(int bx, int by){
-  x=bx;
-  y=by;
+  Bacteria{
+  x=y=20;
   bcolor= color((int)(Math.random()*255),(int)(Math.random()*255),(int)(Math.random()*255));
   }
   void show() {
   fill(bcolor);
    ellipse(x,y,20,20); 
+  }
+  void move(){
+  x+=((int)Math.random()+5-3);
+  y+=((int)Math.random()+5-3);
   }
  }    
