@@ -33,14 +33,14 @@ for (int i =0;i< b.length; i++){
   }
   void move(){
     if (mouseX>x){
-  x= x+((int)(Math.random()*5)-1);
+  x= x+((int)(Math.random()*6)-1);
     }else{
-      x= x-((int)(Math.random()*5)-1);
+      x= x-((int)(Math.random()*6)-1);
     }
     if (mouseY>y){
-  y= y+((int)(Math.random()*5)-1);
+  y= y+((int)(Math.random()*6)-1);
     }else{
-      y= y-((int)(Math.random()*5)-1);
+      y= y-((int)(Math.random()*6)-1);
     }
  } 
  }
