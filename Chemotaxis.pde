@@ -4,6 +4,7 @@ Bacteria[] b;
  {   
  size(500,500);
  background(0);
+ noStroke();
  b= new Bacteria[100];
  for(int i = 0; i<b.length;i++){
    b[i]= new Bacteria();
@@ -31,10 +32,18 @@ for (int i =0;i< b.length; i++){
   ellipse(x,y,20,20); 
   }
   void move(){
-  x= x+((int)(Math.random()*7)-3);
-  y= y+((int)(Math.random()*7)-3);
-  }
- }  
+    if (mouseX>x){
+  x= x+((int)(Math.random()*5)-1);
+    }else{
+      x= x-((int)(Math.random()*5)-1);
+    }
+    if (mouseY>y){
+  y= y+((int)(Math.random()*5)-1);
+    }else{
+      y= y-((int)(Math.random()*5)-1);
+    }
+ } 
+ }
  void mousePressed(){
  
    if(j==0){
